@@ -1,5 +1,6 @@
 //declarando variáveis
 let nivel = "";
+let nomeHeroi = "Dito Malaco"
 
 let resultado = rank(100, 20)
 
@@ -9,6 +10,7 @@ function rank(vitoria, derrota){
     return saldoVitorias;
 }
 
+// estrutura de escolha do nivel do herói.
 switch(true){
 
     case saldoVitorias <= 10:
@@ -39,5 +41,6 @@ switch(true){
         nivel = "Imortal"
 }
 
-console.log("O herói tem de saldo de " + saldoVitorias + " vitórias e está no nível " +
+// resultado
+console.log("O herói " + nomeHeroi + " tem de saldo de " + saldoVitorias + " vitórias e está no nível " +
 nivel + ".")
